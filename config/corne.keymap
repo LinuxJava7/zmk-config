@@ -18,7 +18,7 @@
         colemak {
             bindings = <
 &kp TAB    &kp Q           &kp W           &kp F               &kp P             &kp B        &kp J    &kp L              &kp U                &kp Y           &kp SEMI         &kp BSPC
-&kp LCTRL  &mt A LEFT_GUI  &mt R LEFT_ALT  &mt S LEFT_CONTROL  &mt T LEFT_SHIFT  &kp G        &kp M    &mt N RIGHT_SHIFT  &mt E RIGHT_CONTROL  &mt I LEFT_ALT  &mt O RIGHT_GUI  &kp SQT
+&kp LCTRL  &mt LEFT_GUI A  &mt LEFT_ALT R  &mt LEFT_CONTROL S  &mt LEFT_SHIFT T  &kp G        &kp M    &mt RIGHT_SHIFT N  &mt RIGHT_CONTROL E  &mt LEFT_ALT I  &mt RIGHT_GUI O  &kp SQT
 &kp LSHFT  &kp Z           &kp X           &kp C               &kp D             &kp V        &kp K    &kp H              &kp COMMA            &kp DOT         &kp FSLH         &kp ESC
                                            &kp LGUI            &mo 1             &kp SPACE    &kp RET  &mo 2              &kp LEFT_ALT
             >;
