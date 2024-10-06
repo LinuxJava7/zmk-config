@@ -18,10 +18,10 @@
         colemak {
 
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp F     &kp P  &kp B        &kp J    &kp L  &kp U      &kp Y    &kp SEMI  &kp BSPC
-&kp LCTRL  &kp A  &kp R  &kp S     &kp T  &kp G        &kp M    &kp N  &kp E      &kp I    &kp O     &kp SQT
-&kp LSHFT  &kp Z  &kp X  &kp C     &kp D  &kp V        &kp K    &kp H  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                         &kp LGUI  &mo 1  &kp SPACE    &kp RET  &mo 2  &kp RALT
+&kp TAB    &kp Q           &kp W           &kp F               &kp P             &kp B        &kp J    &kp L              &kp U                &kp Y           &kp SEMI         &kp BSPC
+&kp LCTRL  &mt A LEFT_GUI  &mt R LEFT_ALT  &mt S LEFT_CONTROL  &mt T LEFT_SHIFT  &kp G        &kp M    &mt N RIGHT_SHIFT  &mt E RIGHT_CONTROL  &mt I LEFT_ALT  &mt O RIGHT_GUI  &kp SQT
+&kp LSHFT  &kp Z           &kp X           &kp C               &kp D             &kp V        &kp K    &kp H              &kp COMMA            &kp DOT         &kp FSLH         &kp ESC
+                                           &kp LGUI            &mo 1             &kp SPACE    &kp RET  &mo 2              &kp LEFT_ALT
             >;
         };
 
@@ -47,7 +47,7 @@
 
         sys_kbd {
             bindings = <
-&soft_off   &trans        &trans        &trans        &trans        &trans          &trans           &trans  &rgb_ug RGB_SAI  &rgb_ug RGB_SAD  &trans                          &soft_off
+&soft_off   &trans        &trans        &trans        &trans        &trans          &trans           &trans  &trans           &trans           &trans                          &soft_off
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &rgb_ug RGB_BRI  &trans  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_COLOR_HSB(0,0,100)  &rgb_ug RGB_TOG
 &trans      &trans        &trans        &trans        &trans        &trans          &rgb_ug RGB_BRD  &trans  &trans           &trans           &trans                          &trans
                                         &trans        &trans        &trans          &trans           &trans  &trans
