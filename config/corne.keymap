@@ -59,7 +59,7 @@
 &kp TAB    &kp N1  &kp N2  &kp N3    &kp N4  &kp N5       &kp N6         &kp N7    &kp N8        &kp N9        &kp N0     &kp BSPC
 &trans     &trans  &trans  &trans    &trans  &trans       &kp PAGE_UP    &kp LEFT  &kp DOWN      &kp UP_ARROW  &kp RIGHT  &trans
 &kp LSHFT  &trans  &trans  &trans    &trans  &trans       &kp PAGE_DOWN  &trans    &trans        &trans        &trans     &trans
-                           &kp LGUI  &mo 5   &kp SPACE    &kp RET        &mo 5     &kp LEFT_ALT
+                           &kp LGUI  &mo 3   &kp SPACE    &kp RET        &mo 3     &kp LEFT_ALT
             >;
         };
 
@@ -75,7 +75,7 @@
         layers {
             bindings = <
 &none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &sl 5  &none    &none  &sl 4  &none  &none  &none  &none
+&none  &none  &none  &to 0  &sl 5  &none    &none  &sl 4  &to 6  &none  &none  &none
 &none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
                      &none  &none  &none    &none  &none  &none
             >;
