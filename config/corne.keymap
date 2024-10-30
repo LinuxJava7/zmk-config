@@ -50,25 +50,25 @@
 &kp TAB    &kp Q            &kp W            &kp F                &kp P              &kp B        &kp J    &kp L               &kp U                 &kp Y            &kp SEMI          &kp BSPC
 &kp LCTRL  &hml LEFT_GUI A  &hml LEFT_ALT R  &hml LEFT_CONTROL S  &hml LEFT_SHIFT T  &kp G        &kp M    &hmr RIGHT_SHIFT N  &hmr RIGHT_CONTROL E  &hmr LEFT_ALT I  &hmr RIGHT_GUI O  &kp SQT
 &kp LSHFT  &kp Z            &kp X            &kp C                &kp D              &kp V        &kp K    &kp H               &kp COMMA             &kp DOT          &kp FSLH          &kp ESC
-                                             &kp LGUI             &mo 2              &kp SPACE    &kp RET  &mo 3               &kp LEFT_ALT
+                                             &trans               &mo 2              &kp SPACE    &kp RET  &mo 3               &mo 5
             >;
         };
 
         qwerty {
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E     &kp R  &kp T        &kp Y    &kp U  &kp I      &kp O    &kp P     &kp BSPC
-&kp LCTRL  &kp A  &kp S  &kp D     &kp F  &kp G        &kp H    &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z  &kp X  &kp C     &kp V  &kp B        &kp N    &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                         &kp LGUI  &mo 2  &kp SPACE    &kp RET  &mo 3  &kp RALT
+&kp TAB    &kp Q  &kp W  &kp E   &kp R  &kp T        &kp Y    &kp U  &kp I      &kp O    &kp P     &kp BSPC
+&kp LCTRL  &kp A  &kp S  &kp D   &kp F  &kp G        &kp H    &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z  &kp X  &kp C   &kp V  &kp B        &kp N    &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
+                         &trans  &mo 2  &kp SPACE    &kp RET  &mo 3  &trans
             >;
         };
 
         num-nav {
             bindings = <
-&kp TAB    &kp N1  &kp N2  &kp N3    &kp N4  &kp N5       &kp N6         &kp N7    &kp N8        &kp N9        &kp N0     &kp BSPC
-&trans     &trans  &trans  &trans    &trans  &trans       &kp PAGE_UP    &kp LEFT  &kp DOWN      &kp UP_ARROW  &kp RIGHT  &trans
-&kp LSHFT  &trans  &trans  &trans    &trans  &trans       &kp PAGE_DOWN  &trans    &trans        &trans        &trans     &trans
-                           &kp LGUI  &mo 4   &kp SPACE    &kp RET        &mo 4     &kp LEFT_ALT
+&kp TAB    &kp N1  &kp N2  &kp N3  &kp N4  &kp N5       &kp N6         &kp N7    &kp N8    &kp N9        &kp N0     &kp BSPC
+&trans     &trans  &trans  &trans  &trans  &trans       &kp PAGE_UP    &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans
+&kp LSHFT  &trans  &trans  &trans  &trans  &trans       &kp PAGE_DOWN  &trans    &trans    &trans        &trans     &trans
+                           &trans  &mo 4   &kp SPACE    &kp RET        &mo 4     &trans
             >;
         };
 
@@ -77,14 +77,14 @@
 &kp TAB    &kp EXCL  &kp AT  &kp HASH       &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR              &kp DELETE
 &kp LCTRL  &trans    &trans  &kp BACKSLASH  &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp NON_US_BACKSLASH  &kp GRAVE
 &kp LSHFT  &trans    &trans  &trans         &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE              &kp TILDE
-                             &kp LGUI       &mo 6     &kp SPACE    &kp RET    &mo 6      &kp RALT
+                             &trans         &mo 0     &kp SPACE    &kp RET    &mo 0      &trans
             >;
         };
 
         layers {
             bindings = <
 &none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
-&none  &none  &none  &to 0  &sl 6  &none    &none  &sl 5  &to 1  &none  &none  &none
+&none  &none  &none  &to 0  &sl 0  &none    &none  &sl 5  &to 1  &none  &none  &none
 &none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
                      &none  &none  &none    &none  &none  &none
             >;
