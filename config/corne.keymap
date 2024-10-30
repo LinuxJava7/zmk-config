@@ -9,6 +9,8 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/rgb.h>
 
+&studio_unlock
+
 &led_strip { chain-length = <27>; };
 
 / {
