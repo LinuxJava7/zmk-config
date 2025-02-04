@@ -50,25 +50,34 @@
 &kp TAB  &kp Q            &kp W            &kp F                &kp P              &kp B        &kp J    &kp L               &kp U                 &kp Y            &kp SEMI          &kp BSPC
 &trans   &hml LEFT_GUI A  &hml LEFT_ALT R  &hml LEFT_CONTROL S  &hml LEFT_SHIFT T  &kp G        &kp M    &hmr RIGHT_SHIFT N  &hmr RIGHT_CONTROL E  &hmr LEFT_ALT I  &hmr RIGHT_GUI O  &kp SQT
 &trans   &kp Z            &kp X            &kp C                &kp D              &kp V        &kp K    &kp H               &kp COMMA             &kp DOT          &kp FSLH          &kp ESC
-                                           &mo 5                &mo 2              &kp SPACE    &kp RET  &mo 3               &mo 5
+                                           &mo 2                &mo 3              &kp SPACE    &kp RET  &mo 4               &mo 5
             >;
         };
 
         qwerty {
             bindings = <
-&kp TAB  &kp Q  &kp W  &kp E   &kp R  &kp T        &kp Y    &kp U  &kp I      &kp O    &kp P     &kp BSPC
-&trans   &kp A  &kp S  &kp D   &kp F  &kp G        &kp H    &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
-&trans   &kp Z  &kp X  &kp C   &kp V  &kp B        &kp N    &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                       &trans  &mo 2  &kp SPACE    &kp RET  &mo 3  &trans
+&kp TAB  &kp Q  &kp W  &kp E   &kp R   &kp T        &kp Y    &kp U   &kp I      &kp O    &kp P     &kp BSPC
+&trans   &kp A  &kp S  &kp D   &kp F   &kp G        &kp H    &kp J   &kp K      &kp L    &kp SEMI  &kp SQT
+&trans   &kp Z  &kp X  &kp C   &kp V   &kp B        &kp N    &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
+                       &trans  &trans  &kp SPACE    &kp RET  &trans  &trans
             >;
         };
 
-        num-nav {
+        nav {
             bindings = <
-&kp TAB  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5       &kp N6         &kp N7    &kp N8    &kp N9        &kp N0     &kp BSPC
-&trans   &trans  &trans  &trans  &trans  &trans       &kp PAGE_UP    &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans
-&trans   &trans  &trans  &trans  &trans  &trans       &kp PAGE_DOWN  &trans    &trans    &trans        &trans     &trans
-                         &trans  &mo 4   &kp SPACE    &kp RET        &mo 4     &trans
+&trans  &trans  &trans  &trans  &trans  &trans       &trans         &trans    &trans    &trans        &trans     &kp BSPC
+&trans  &trans  &trans  &trans  &trans  &trans       &kp PAGE_UP    &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans
+&trans  &trans  &trans  &trans  &trans  &trans       &kp PAGE_DOWN  &trans    &trans    &trans        &trans     &trans
+                        &trans  &trans  &kp SPACE    &kp RET        &trans    &trans
+            >;
+        };
+
+        num {
+            bindings = <
+&kp TAB  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5       &kp N6   &kp N7        &kp N8        &kp N9        &kp N0           &kp BSPC
+&trans   &trans  &trans  &trans  &trans  &trans       &trans   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_MULTIPLY  &kp KP_DIVIDE
+&trans   &trans  &trans  &trans  &trans  &trans       &kp N0   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_PLUS      &kp KP_SUBTRACT
+                         &trans  &trans  &kp SPACE    &kp RET  &trans        &trans
             >;
         };
 
@@ -77,24 +86,15 @@
 &kp TAB  &kp EXCL  &kp AT  &kp HASH       &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR              &kp DELETE
 &trans   &trans    &trans  &kp BACKSLASH  &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp NON_US_BACKSLASH  &kp GRAVE
 &trans   &trans    &trans  &trans         &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE              &kp TILDE
-                           &trans         &mo 0     &kp SPACE    &kp RET    &mo 0      &trans
-            >;
-        };
-
-        layers {
-            bindings = <
-&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
-&none  &none  &none  &to 0  &sl 0  &none    &none  &sl 5  &to 1  &none  &none  &none
-&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
-                     &none  &none  &none    &none  &none  &none
+                           &trans         &trans    &kp SPACE    &kp RET    &trans     &trans
             >;
         };
 
         kbd_cfg {
             bindings = <
-&soft_off   &kp C_BRI_DN  &kp C_BRI_UP  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE      &trans           &kp C_PREV       &kp C_PAUSE      &kp C_NEXT       &kp PRINTSCREEN                 &soft_off
+&soft_off   &kp C_BRI_DN  &kp C_BRI_UP  &kp C_MUTE    &kp C_VOL_DN  &kp C_VOL_UP    &trans           &kp C_PREV       &kp C_PAUSE      &kp C_NEXT       &kp PRINTSCREEN                 &soft_off
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &rgb_ug RGB_SAI  &rgb_ug RGB_SAD  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_COLOR_HSB(0,0,100)  &rgb_ug RGB_TOG
-&trans      &trans        &trans        &trans        &trans        &trans          &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &trans           &trans           &trans                          &studio_unlock
+&to 1       &trans        &trans        &trans        &trans        &trans          &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &trans           &trans           &trans                          &studio_unlock
                                         &trans        &trans        &trans          &trans           &trans           &trans
             >;
         };
